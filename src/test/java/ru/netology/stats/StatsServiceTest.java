@@ -9,9 +9,9 @@ public class StatsServiceTest {
     @Test
     public void shouldTestSummSales() {
         StatsService service = new StatsService();
-        int[] arr = {2, 2, 2, 2, 2};
-        int expectedSumm = 10;
-        int actualSumm = service.getSummSales(arr);
+        long[] arr = {2, 2, 2, 2, 2};
+        long expectedSumm = 10;
+        long actualSumm = service.getSummSales(arr);
         Assertions.assertEquals(expectedSumm, actualSumm);
     }
 
@@ -19,9 +19,9 @@ public class StatsServiceTest {
     @Test
     public void shouldTestAverageSales() {
         StatsService service = new StatsService();
-        int[] arr = {2, 2, 2, 2, 2};
-        int expectedAverageSumm = 2;
-        int actualAverageSumm = service.getAverageSumm(arr);
+        long[] arr = {2, 2, 2, 2, 2};
+        long expectedAverageSumm = 2;
+        long actualAverageSumm = service.getAverageSumm(arr);
         Assertions.assertEquals(expectedAverageSumm, actualAverageSumm);
     }
 
@@ -29,9 +29,9 @@ public class StatsServiceTest {
     @Test
     public void shouldTestMaxMonthSale() {
         StatsService service = new StatsService();
-        int[] arr = {1, 2, 3, 3, 1};
-        int expectedMax = 4;
-        int actualMax = service.getMaxMonthSale(arr);
+        long[] arr = {1, 2, 3, 3, 1};
+        long expectedMax = 4;
+        long actualMax = service.getMaxMonthSale(arr);
         Assertions.assertEquals(expectedMax, actualMax);
     }
 
@@ -39,9 +39,9 @@ public class StatsServiceTest {
     @Test
     public void shouldTestMinMonthSale() {
         StatsService service = new StatsService();
-        int[] arr = {1, 2, 3, 3, 1};
-        int expectedMin = 5;
-        int actualMin = service.getMinMonthSale(arr);
+        long[] arr = {1, 2, 3, 3, 1};
+        long expectedMin = 5;
+        long actualMin = service.getMinMonthSale(arr);
         Assertions.assertEquals(expectedMin, actualMin);
     }
 
@@ -49,9 +49,9 @@ public class StatsServiceTest {
     @Test
     public void shouldTestLowerAverageSale() {
         StatsService service = new StatsService();
-        int[] arr = {1, 2, 3, 3, 1};
-        int expectedMin = 2;
-        int actualMin = service.getLowerThanAverageSumm(arr);
+        long[] arr = {1, 2, 3, 3, 1};
+        long expectedMin = 2;
+        long actualMin = service.getLowerThanAverageSumm(arr);
         Assertions.assertEquals(expectedMin, actualMin);
     }
 
@@ -59,9 +59,9 @@ public class StatsServiceTest {
     @Test
     public void shouldTestHigherAverageSale() {
         StatsService service = new StatsService();
-        int[] arr = {1, 2, 3, 3, 1};
-        int expectedMax = 2;
-        int actualMax = service.getHigherThanAverageSumm(arr);
+        long[] arr = {1, 2, 3, 3, 1};
+        long expectedMax = 2;
+        long actualMax = service.getHigherThanAverageSumm(arr);
         Assertions.assertEquals(expectedMax, actualMax);
     }
 }
